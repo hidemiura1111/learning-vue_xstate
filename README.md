@@ -26,3 +26,7 @@ npm install
 npm run dev
 npm install xstate @xstate/inspect @xstate/vue
 ```
+
+- Vue.js
+- TypeScript
+- xstate
