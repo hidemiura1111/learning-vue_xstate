@@ -37,7 +37,7 @@ const restaurants: Restaurant[] = [
 export const fetchRestaurants = async (): Promise<Restaurant[]> => {
   await sleep(1000);
 
-  if (Math.random() < 0.8) {
+  if (Math.random() < 0.5) {
     throw new Error('Could not fetch restaurants!');
   }
 

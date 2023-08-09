@@ -24,7 +24,14 @@
   ">
     <div :key="restaurant.id" v-for="restaurant in state.context.restaurants">
       <h3>{{ restaurant.name }}</h3>
+      <p>Rating - {{ restaurant.rating }} stars</p>
+      <p>{{ restaurant.review }}</p>
     </div>
+  </div>
+
+  <div v-if="state.matches('failure')">
+    <h4>Error loading restaurants</h4>
+    <p>{{ state.context.error.message }}</p>
   </div>
 </template>
 
